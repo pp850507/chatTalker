@@ -1,0 +1,226 @@
+
+.banner_img{
+    width: 885px;
+    height: 559px;
+    position: absolute;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner.svg);
+    background-repeat: no-repeat;
+    right: 0;
+    top: 0px;
+    background-size: contain;
+    z-index: -1;
+}
+
+@media(max-width:436px){
+    .banner_img{
+        width: 100%;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner_sm.svg);
+    }
+}
+
+.bg-grey{
+    width: 100%;
+    height: 470px;
+    position: absolute;
+    background-size: 470px;
+    background-color: #F7F9FD;
+    border-radius: 0px 0px 0px 300px;
+    z-index: -2;
+}
+
+@media(max-width:767px){
+    .bg-grey{
+        width: 100%;
+        height: 495px;
+    }
+}
+
+.banner{
+    padding-top: 92px;
+    p{
+        font-size: 48px;
+        font-weight: bold;
+    }
+    h3{
+        padding-top: 16px;
+        padding-bottom: 269px;
+        font-size: 16px;
+    }
+}
+
+.main{
+    max-width: 909px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    .Number_plan{
+        text-align: center;
+        h3{
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 48px;
+        }
+        .number_buttons{
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+    }
+    .Version{
+        gap: 21px;
+        margin-top: 54px;
+        justify-content: space-between;
+        .Version_frame{
+            width: 50%;
+            box-shadow: 0px 2px 10px #00000014;
+            .bottom_line{
+                border-top: solid #ACC0D8 1px;
+            }
+            h3{
+                text-align: center;
+                padding: 24px 16px;
+                font-weight: bold;
+                font-size: 24px;
+            }
+            .Version_frame_p{
+                text-align: center;
+                font-weight: 600;
+                padding: 32px 24px; 
+            }
+            .quantity{
+                gap: 21px;
+                padding: 0px 23px;
+                .quantity_left{
+                    width: 50%;
+                    padding: 24px 0;
+                    background-color: #F5F5F5;
+                    border-radius: 12px;
+                    text-align: center;
+                    .quantity_left_head{
+                        font-size: 12px;
+                    }
+                    .quantity_left_people{
+                        font-size: 32px;
+                        color: #56C4C5;
+                        sub{
+                            vertical-align: sub;
+                            font-size: 12px;
+                        }
+                    }
+                }
+                span{
+                    font-size: 30px;
+                    line-height: 3.7;
+                    font-weight: bold;
+                }
+                .quantity_right{
+                    width: 50%;
+                    padding: 24px 0;
+                    background-color: #F5F5F5;
+                    border-radius: 12px;
+                    text-align: center;
+                    .quantity_right_head{
+                        font-size: 12px;
+                    }
+                    .quantity_right_people{
+                        font-size: 32px;
+                        sub{
+                            vertical-align: sub;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            } 
+            .Version_content{
+                flex-direction:column;
+                gap: 21px;
+                margin-top: 32px;
+                padding-left: 29px;
+                margin-bottom: 32px;
+                li{
+                    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/icon_check.svg);
+                    background-repeat: no-repeat;
+                    padding-left: 32.5px;
+                    font-weight: 600;
+                }
+            }
+            .btn_frame{
+                margin-bottom: 32px;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media(max-width:767px){
+    .main{
+        .Number_plan{
+            h3{
+                padding: 0px 20px;
+                font-size: 28px;
+            }
+        }
+        .Version{
+            flex-direction:column;
+            padding:  0px 20px;
+            .Version_frame{                
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+.btn-green_edge{
+    color: #56C4C5;
+    border: 1px solid #56C4C5;
+    &:hover{
+        color: #fff;
+        background-color: #56C4C5;
+    }
+}
+
+.question{
+    max-width: 909px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    .question_q{
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 48px;
+    }
+    .question_ul{
+        gap: 16px;
+        flex-direction: column;
+        .question_li{
+            box-shadow: 0px 2px 10px #00000014;
+            border-radius: 12px;
+            background-color: #FFFFFF;
+            .question_a{
+                justify-content: space-between;
+                padding: 16px 32px;
+                .question_h3{
+                    font-size: 18px;
+                    line-height: 1.5;
+                    color: #000;
+                    font-weight: 700;
+                }
+            }
+            p{
+                padding: 0px 32px 16px 32px;
+                color: #747474;
+            }
+        }
+    }
+}
+
+.text-green{
+    color: #56C4C5 !important; 
+}
+
+@media(max-width:767px){
+    .question{
+        padding: 0px 20px;
+    }
+}
